@@ -1,0 +1,32 @@
+.mb-1{
+	margin-bottom: 1rem;
+}
+
+.mb-2{
+	margin-bottom: 2rem;
+}
+
+.m-2{
+	margin: 2rem;
+}
+
+.mc-2{
+	margin: 2rem auto;
+}
+
+.plr-1{
+	padding: 0 1rem;
+}
+
+.title-site{
+	text-align: center;
+	margin: 1rem;
+}
+
+.remove{
+	display: none;
+}
+
+.show{
+	display: block;
+}
