@@ -4,15 +4,20 @@ include_once '../connection/dbh.inc.php';
 
 if (!empty($_POST['insert'])) {
 
+    $valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'bmp' , 'pdf' , 'doc' , 'ppt'); // valid extensions
+
     $namee = mysqli_real_escape_string($conn, $_POST["namee"]);
+    $gender = mysqli_real_escape_string($conn, $_POST["gender"]);
+    $cstatus = mysqli_real_escape_string($conn, $_POST["cstatus"]);
     $address_l_one = mysqli_real_escape_string($conn, $_POST["address_l_one"]);
     $address_l_two = mysqli_real_escape_string($conn, $_POST["address_l_two"]);
     $nic_no = mysqli_real_escape_string($conn, $_POST["nic_no"]);
     $m_no = mysqli_real_escape_string($conn, $_POST["m_no"]);
     $designation = mysqli_real_escape_string($conn, $_POST["designation"]);
-    $gn_div = mysqli_real_escape_string($conn, $_POST["gn_div"]);
-    $ds_div = mysqli_real_escape_string($conn, $_POST["ds_div"]);
     $district = mysqli_real_escape_string($conn, $_POST["district"]);
+    $ds_div = mysqli_real_escape_string($conn, $_POST["ds_div"]);
+    $gn_div = mysqli_real_escape_string($conn, $_POST["gn_div"]);
+    $email_add = mysqli_real_escape_string($conn, $_POST["email_add"]);
     $sim_no = mysqli_real_escape_string($conn, $_POST["sim_no"]);
     $sim_s_no = mysqli_real_escape_string($conn, $_POST["sim_s_no"]);
 

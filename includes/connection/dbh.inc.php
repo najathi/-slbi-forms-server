@@ -7,10 +7,16 @@
 //$dbName = "slbilk_slbi_admin_new";
 
 // local
+//$dbServerName = "localhost";
+//$dbUsername = "root";
+//$dbPassword = "";
+//$dbName = "slbi_admin";
+
+// New Local Database
 $dbServerName = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "slbi_admin";
+$dbName = "slbi_hr_system";
 
 // Create connection
 $conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
